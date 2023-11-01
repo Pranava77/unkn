@@ -16,14 +16,14 @@ tl.to("#main1",{
 tl.to("#main1",{
     y:"vh" ,
     duration:1,
-    Delay: 0.2
+    Delay: 0
 })
 
 
 tl.to("#main1",{
-   rotate: 360,
+   rotate: 18000,
    scale:1,
-   duration: 1
+   duration: 3
 })
 
 

@@ -55,7 +55,7 @@ html{
 
 
 #nav img{
-    height: 67px; 
+    height: 111px; 
     width: 30%;
 }
 
@@ -84,7 +84,6 @@ html{
 #elem1{
     width: 30%;
     height: 100%;
-    
 }
 
 #elem2{
@@ -375,9 +374,13 @@ html{
 
 
 #page4-left{
-    width: 60%;
+    width: 70%;
     height: 100%;
     padding: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #page4-left img{
@@ -387,90 +390,109 @@ html{
 }
 
 
-#page4-right p{
-   font-size: 40px;
-   font-family: canopee;
+
+
+
+#it1{
+    width: 100%;
+    height: 100%;
 }
 
 
+#it1 #image-div{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#it1 h4{
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#it1 h4 span{
+    background-color: salmon;
+    color: black;
+    padding: 4px;
+    font-size: 38px;
+    border-radius: 6px;
+}
+
+#it1 p{
+    font-size: 32px;
+    font-family: domain;
+    font-weight: 50;
+}
+ 
+
+
 #page4-right{
-    width: 40%;
+    width: 30%;
     height: 100%;
-    padding: 80px 60px;
+    padding: 80px 40px;
     margin-bottom: 50px;
-    line-height: 39px;
+    line-height: 30px;
+}
+
+
+#page4-right p{
+   font-size: 30px;
+   font-family: canopee;
+   margin-bottom: 50px;
 }
 
 
 #page4 img:hover {
-    filter: grayscale(2)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #page3 {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    background-color: #111;
-    justify-content: space-between;
-    overflow: hidden;
-
-}
-
-
-
-#page3 img{
-    height: 70%;
-    width: 100%;
-    object-fit: cover;
- }
-
-
-#page3 #image1-div {
-    height: 90%;
-    width: 50%;
-}
-
-
-#image1-div img{
-    height: 100%;
-    width: 60%;
-    object-fit: cover;
-    transition: all ease 0.7s;
-    padding: 50px 50px;
-    margin-left: 250px;
-}
-
-
-
-#image1-div:hover img{
-    scale: 1.1;
+    scale: 1.2;
     filter: contrast(130%);
 }
 
-#page3 h1{
-    height: 100%;
-    width: 50%;
-    padding: 180px 50px;
-} */
+
+#page4-right button{
+    font-size: 30px;
+    padding: 20px 40px ;
+    font-family: canopee;
+    margin-bottom: 50px;
+    border-radius: 22%;
+    background-color: black;
+}
+
+#page5{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#page5::-webkit-scrollbar{
+    display: none;
+}
 
 
+#page5 h1{
+    font-size: 400px;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation
+}
 
 
+@keyframes scroll {
+    0% {
+        transform : translateX(0);
+    }
 
+    100% {
+        transform : translateX(-100%);
+    }
+}
 
+#page5 h1:hover{
+    animation-play-state: paused;
+}
